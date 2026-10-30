@@ -1,6 +1,6 @@
-# 🤖 AI Agent Integration Guide — `@conversora/auth-client`
+# 🤖 AI Agent Integration Guide — `conversora-auth-sdk`
 
-> **Quick Context for AI Agents:** `@conversora/auth-client` is a zero-dependency, universal authentication client for Conversora headless e-commerce storefronts (Astro, Next.js, Remix, Vite, React, Vanilla). It provides Clerk-style developer ergonomics with hardware-bound RFC 9449 DPoP security.
+> **Quick Context for AI Agents:** `conversora-auth-sdk` is a zero-dependency, universal authentication client for Conversora headless e-commerce storefronts (Astro, Next.js, Remix, Vite, React, Vanilla). It provides Clerk-style developer ergonomics with hardware-bound RFC 9449 DPoP security.
 
 ---
 
@@ -10,16 +10,16 @@ No npm registry or tokens needed. Install directly via GitHub:
 
 ```bash
 # Using pnpm (Recommended)
-pnpm add github:conversora/auth-client
+pnpm add github:conversora/conversora-auth-sdk
 
 # Using npm
-npm install github:conversora/auth-client
+npm install github:conversora/conversora-auth-sdk
 
 # Using yarn
-yarn add github:conversora/auth-client
+yarn add github:conversora/conversora-auth-sdk
 
 # Using bun
-bun add github:conversora/auth-client
+bun add github:conversora/conversora-auth-sdk
 ```
 
 ---
@@ -48,7 +48,7 @@ bun add github:conversora/auth-client
 
 ### Pattern 1: Initializing the Client (`src/lib/auth.ts`)
 ```ts
-import { createAuthClient } from '@conversora/auth-client';
+import { createAuthClient } from 'conversora-auth-sdk';
 
 export const auth = createAuthClient({
   authUrl: import.meta.env.PUBLIC_AUTH_URL || 'https://auth.conversora.io',
@@ -98,7 +98,7 @@ import {
   UserButton,
   useUser,
   useAuth,
-} from '@conversora/auth-client/react';
+} from 'conversora-auth-sdk/react';
 
 export function NavigationBar() {
   return (

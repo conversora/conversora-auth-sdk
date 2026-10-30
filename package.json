@@ -1,7 +1,7 @@
 {
-  "name": "@conversora/auth-client",
+  "name": "conversora-auth-sdk",
   "version": "1.0.0",
-  "description": "Universal, zero-dependency stateless RFC 9449 DPoP authentication client with atomic multi-account wipe for Conversora storefronts",
+  "description": "Universal RFC 9449 DPoP authentication & customer management SDK for Conversora e-commerce storefronts and modern web applications.",
   "main": "./dist/index.cjs",
   "module": "./dist/index.mjs",
   "types": "./dist/index.d.ts",
@@ -31,6 +31,30 @@
     "typecheck": "tsc --noEmit",
     "test": "npx tsx --test test/*.test.ts"
   },
+  "keywords": [
+    "conversora",
+    "conversora-auth",
+    "conversora-auth-sdk",
+    "authentication",
+    "dpop",
+    "rfc9449",
+    "jwt",
+    "ecommerce",
+    "astro",
+    "react",
+    "nextjs",
+    "clerk-alternative"
+  ],
+  "author": "Conversora Team",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/conversora/conversora-auth-sdk.git"
+  },
+  "bugs": {
+    "url": "https://github.com/conversora/conversora-auth-sdk/issues"
+  },
+  "homepage": "https://github.com/conversora/conversora-auth-sdk#readme",
   "dependencies": {},
   "peerDependencies": {
     "react": ">=18.0.0",

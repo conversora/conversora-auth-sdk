@@ -22,7 +22,7 @@ async function resolveEsbuild() {
 }
 
 async function build() {
-  console.log('📦 Building @conversora/auth-client...');
+  console.log('📦 Building conversora-auth-sdk...');
   const esbuild = await resolveEsbuild();
 
   // 1. Build ESM & CJS with esbuild

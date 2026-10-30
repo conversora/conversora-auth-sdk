@@ -1,4 +1,4 @@
-# `@conversora/auth-client`
+# `conversora-auth-sdk`
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 [![Edge Native](https://img.shields.io/badge/Edge-Cloudflare%20Workers-orange.svg)](https://workers.cloudflare.com)
@@ -27,16 +27,16 @@ No npm registry or tokens needed. Install directly via GitHub with a single comm
 
 ```bash
 # Using pnpm (Recommended)
-pnpm add github:conversora/auth-client
+pnpm add github:conversora/conversora-auth-sdk
 
 # Using npm
-npm install github:conversora/auth-client
+npm install github:conversora/conversora-auth-sdk
 
 # Using yarn
-yarn add github:conversora/auth-client
+yarn add github:conversora/conversora-auth-sdk
 
 # Using bun
-bun add github:conversora/auth-client
+bun add github:conversora/conversora-auth-sdk
 ```
 
 ---
@@ -61,7 +61,7 @@ bun add github:conversora/auth-client
 </div>
 
 <script>
-  import { createAuthClient } from '@conversora/auth-client';
+  import { createAuthClient } from 'conversora-auth-sdk';
 
   const auth = createAuthClient({
     authUrl: 'https://auth.conversora.io',
@@ -96,7 +96,7 @@ bun add github:conversora/auth-client
 ```tsx
 'use client';
 
-import { AuthProvider } from '@conversora/auth-client/react';
+import { AuthProvider } from 'conversora-auth-sdk/react';
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
@@ -120,7 +120,7 @@ import {
   SignedOut,
   UserButton,
   useUser,
-} from '@conversora/auth-client/react';
+} from 'conversora-auth-sdk/react';
 
 export function Header() {
   const { user } = useUser();
@@ -164,7 +164,7 @@ import {
   UserButton,
   useAuth,
   useUser,
-} from '@conversora/auth-client/react';
+} from 'conversora-auth-sdk/react';
 
 export default function App() {
   return (
@@ -212,7 +212,7 @@ function Dashboard() {
 ## 📱 Mobile Phone SMS OTP Authentication
 
 ```ts
-import { createAuthClient } from '@conversora/auth-client';
+import { createAuthClient } from 'conversora-auth-sdk';
 
 const auth = createAuthClient({ tenantId: 'booksmuggler' });
 

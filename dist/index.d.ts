@@ -1,5 +1,5 @@
 /**
- * @conversora/auth-client
+ * conversora-auth-sdk
  * Universal, zero-dependency stateless DPoP authentication client with atomic multi-account wipe.
  */
 export { ConversoraAuthClient, createAuthClient } from './client/auth-client';

@@ -1,5 +1,5 @@
 /**
- * Core types for @conversora/auth-client
+ * Core types for conversora-auth-sdk
  */
 
 export interface User {
